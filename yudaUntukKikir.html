@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hai Piwerrrr</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 12px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #btn_mau {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #btn_gamau {
+      background-color: #f44336;
+      color: white;
+      position: absolute;
+    }
+
+    .pojok-kanan-bawah {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 14px;
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hai Piwer pahri tersayang 💖</h1>
+
+  <div class="image-container">
+    <img src="https://i.imgur.com/XRgO2Xj.jpg" alt="Yudasikma" />
+    <img src="https://i.imgur.com/1IPLgHg.jpeg" alt="Gambar Kedua" />
+  </div>
+
+  <h2>Mau ga jadi pacar kaka pahri? 😢</h2>
+
+  <button id="btn_mau" onclick="alert('Yeay! jangan lupa donate 100k ya 💘')">Mau</button>
+  <button id="btn_gamau" onclick="gamau(this)">Gamau</button>
+
+  <div class="pojok-kanan-bawah">
+    C? yuda&piwer 💌
+  </div>
+
+  <script>
+    function gamau(id) {
+      var i = Math.floor(Math.random() * (window.innerWidth - 100));
+      var j = Math.floor(Math.random() * (window.innerHeight - 50));
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+
+</body>
+</html>
